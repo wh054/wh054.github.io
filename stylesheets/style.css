@@ -1,11 +1,28 @@
 ﻿body
 {
-     
+    width:100%;
 }
 
 div.container{
-            background-color:red;
-            width:800px;
-            min-height:800px;
+            background-color:#9d9d9d;
+            width:100%;
+            height:620px;
             margin:0 auto;
+            overflow:hidden;
+}
+div.headwrap{
+        background-color:#ff2d2d;
+}
+
+div.content{
+          background-color:blue;
+          height:420px;
+}
+
+footer{
+    background-color:#4f4f4f;
+    width:100%;
+    text-align:center;
+    padding-top:1px;
+    padding-bottom:1px;
 }
