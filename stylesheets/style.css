@@ -1,35 +1,52 @@
 ﻿body
 {
-    width:100%;
     margin-left:0px;
     margin-top:-21px;
     margin-bottom:0px;
     background-image:url(../images/background.jpg);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    background-position:center;
+}
+html{
+    width:100%;
+    height:100%;
 }
 
 div.container{
-            width:800px;
+            width:1000px;
+            height:992px;
             margin:0 auto;
-            overflow:hidden;          
+            overflow:hidden;    
+            background-color:white;  
+            box-shadow: 0px 0px 10px 1px #ffffff;
 }
 div.headwrap{
+        position:fixed;
+        width:1050px;
         background-color:#ce0000;
         height:100px;
+        box-shadow: 0px 0px 10px 5px #666;
+        margin-left:-25px;
 }
 
 div.content{
           background-image:url(../images/footer-ramp.jpg);
           background-repeat:no-repeat;
           background-size:cover;
-          min-height:445px;
+          height:915px;
 }
 
 div.footer{
+    bottom:0px;
     background-color:#3c3c3c;
-    width:100%;
+    width:1000px;
     height:80px;
     text-align:center;
     color:white;
+}
+a{
+    text-decoration:none;
+    color:cornflowerblue;
 }
