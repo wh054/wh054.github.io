@@ -19,14 +19,49 @@ div.container{
             height:992px;
             margin:0 auto;
             overflow:hidden;    
-            background-color:white;  
             box-shadow: 0px 0px 10px 1px #ffffff;
 }
 div.headwrap{
+        background-color:rgba(255, 0, 0, 0.6);
+        text-align:center;
         width:100%;
-        background-color:#ce0000;
         height:100px;
         box-shadow: 0px 0px 10px 5px #666;
+}
+div.headwrap-img{
+    position:absolute;
+    background-image:url(../images/super_mario/mary9.png);
+    height:110px;
+    width:125px;
+    top:-10px;
+    margin-left:10px;
+}
+div.headwrap-img2{
+    position:absolute;
+    background-image:url(../images/super_mario/mary11.png);
+    background-size:100% 100%;
+    height:50px;
+    width:50px;
+    top:45px;
+    margin-left:300px;
+}
+div.headwrap-img3{
+    position:absolute;
+    background-image:url(../images/super_mario/mary3.png);
+    background-size:100% 100%;
+    height:110px;
+    width:125px;
+    top:-5px;
+    margin-left:630px;
+}
+div.headwrap-img4{
+    position:absolute;
+    background-image:url(../images/super_mario/mary19.png);
+    background-size:100% 100%;
+    height:85px;
+    width:70px;
+    top:10px;
+    margin-left:940px;
 }
 
 div.content{
@@ -38,6 +73,7 @@ div.content{
 }
 
 div.footer{
+    //background-color:rgba(56, 56, 56, 0.8);
     bottom:0px;
     background-color:#3c3c3c;
     width:1000px;
