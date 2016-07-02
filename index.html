@@ -3,35 +3,405 @@
 <head>
   <meta charset="utf-8">
   <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" src="ueditor/ueditor.parse.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
 
   <link rel="stylesheet" href="stylesheets/style.css">
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>-->
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
 
   <title>Hello There!</title>
-  <meta name="description" content="">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
 </head>
 
 <body>
        <div class="container">
            <div class="headwrap">
-                  <h1 style="font-family:'微软雅黑'; font-style:oblique">个人简介</h1>
-               <div style="text-align:right;margin-top:-5px;">
+                  <h1 style="font-family:'微软雅黑'; font-style:oblique">个人简历</h1>
+               <div style="text-align:right;">
                    <a href="https://github.com/wh054" class="code" style="color:white">转到我的GitHub</a>
                </div>
-           </div>
-           
+           </div>      
            <div class="content">
-               
-           </div>
+                 <!--<div>
+                     <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>                          
+                 </div>-->
+          <div id="myshow">
+              <table>
+                  <tbody>
+                      <tr style=";height:36px" class="firstRow">
+                          <td width="83" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">姓</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">名：</span>
+                              </p>
+                          </td>
+                          <td width="88" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">文顺鹏</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">性</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">别：</span>
+                              </p>
+                          </td>
+                          <td width="113" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">男</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">民</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">族：</span>
+                              </p>
+                          </td>
+                          <td width="273" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">汉</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:36px">
+                          <td width="83" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">出生年月：</span>
+                              </p>
+                          </td>
+                          <td width="88" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">1993/2/13</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">联系电话：</span>
+                              </p>
+                          </td>
+                          <td width="113" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">13726266785</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">工作经验：</span>
+                              </p>
+                          </td>
+                          <td width="273" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">1</span><span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">年</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:36px">
+                          <td width="83" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">学</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">历：</span>
+                              </p>
+                          </td>
+                          <td width="88" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">本科</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">专</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">业：</span>
+                              </p>
+                          </td>
+                          <td width="113" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">电子信息</span>
+                              </p>
+                          </td>
+                          <td width="75" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">毕业学校：</span>
+                              </p>
+                          </td>
+                          <td width="273" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">吉林大学珠海学院</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";page-break-inside:avoid;height:36px">
+                          <td width="83" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">住</span><span style="font-size:12px;line-height:150%">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family:宋体">址：</span>
+                              </p>
+                          </td>
+                          <td width="624" colspan="5" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">广西省百色市</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";page-break-inside:avoid;height:36px">
+                          <td width="83" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">电子信箱：</span>
+                              </p>
+                          </td>
+                          <td width="624" colspan="5" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">396191931@qq.com</span>
+                              </p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p style="line-height:150%">
+                  &nbsp;
+              </p>
+              <p style="line-height:150%;border:none;padding:0;padding:0 0 1px 0">
+                  <span style="font-family:宋体">求职意向：</span>
+              </p>
+              <p style="line-height:150%">
+                  &nbsp;
+              </p>
+              <table>
+                  <tbody>
+                      <tr style=";height:35px" class="firstRow">
+                          <td width="119" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">目标职位：</span></strong>
+                              </p>
+                          </td>
+                          <td width="586" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">软件开发工程师</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:35px">
+                          <td width="119" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:   150%;font-family:宋体">目标行业：</span></strong>
+                              </p>
+                          </td>
+                          <td width="586" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">IT/</span><span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">互联网</span><span style="font-size:12px;line-height:150%;color:teal"> &nbsp; </span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:35px">
+                          <td width="119" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">期望薪资：</span></strong>
+                              </p>
+                          </td>
+                          <td width="586" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">4000~6000</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:35px">
+                          <td width="119" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:   150%;font-family:宋体">期望地区：</span></strong>
+                              </p>
+                          </td>
+                          <td width="586" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">南宁</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr style=";height:35px">
+                          <td width="119" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:   150%;font-family:宋体">到岗时间：</span></strong>
+                              </p>
+                          </td>
+                          <td width="586" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;color:teal">1</span><span style="font-size:12px;line-height:150%;font-family:宋体;color:teal">月内</span>
+                              </p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p style="line-height:150%">
+                  &nbsp;
+              </p>
+              <p style="line-height:150%;border:none;padding:0;padding:0 0 1px 0">
+                  <span style="font-family:宋体">自我评价：</span>
+              </p>
+              <table>
+                  <tbody>
+                      <tr class="firstRow">
+                          <td width="561" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">本人自学能力较强 ，有良好的逻辑思维和编程习惯。 在校期间学习了汇编&nbsp; 、C语言及51单片机，并利用课余时间自学了C#、JAVA、及UNITY3D 游戏开发，应用于毕业设计并获得了优秀评级。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">&nbsp;</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">熟练使用C#进行WINFORM软件开发 有多线程并发计算开发经验，熟悉TCP/UDP及Socket通信。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">能熟练使用VS进行程序的编写及调试 。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">熟悉SQL语言及SQLITE、SQL Server的使用。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">&nbsp;</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">未毕业前在公司的实习期间，独立进行并完成两款Unity3D棋牌类游戏核心算法的编写、游戏相关软件的开发及数据库的管理工作。熟悉HTML、CSS、Bootstrap、JavaScript、JQuery、Ajax、ADO.NET Entity Framework 、ASP.NET MVC框架，能够独立进行并完成网站前端及后台的开发工作。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">&nbsp; </span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">性格外向开朗&nbsp;&nbsp; 喜欢创新 有良好的团队合作和沟通习惯&nbsp;&nbsp; 善于倾听他人意见&nbsp; 在校期间曾担任社团副部长</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">有较好的英语和日语的水平，能独立看懂文档，一般日常交流及GOOGLE的使用没问题。</span></strong>
+                              </p>
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white"><br /> &nbsp; </span></strong><strong><span style="font-size:12px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#555555;background:white">希望能够获得一份稳定的工作。</span></strong>
+                              </p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p style="line-height:150%;border:none;padding:0;padding:0 0 1px 0">
+                  <span style="font-family:宋体">工作经历：</span>
+              </p>
+              <p style="line-height:150%">
+                  &nbsp;
+              </p>
+              <table>
+                  <tbody>
+                      <tr class="firstRow">
+                          <td width="115" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%">2012.9</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">—</span></strong><strong><span style="font-size:12px;line-height:150%">2013.6</span></strong>
+                              </p>
+                          </td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">吉林大学珠海学院动漫协会</span></strong><strong><span style="font-size:12px;line-height:150%">&nbsp; </span></strong><strong><span style="font-size:12px;line-height:150%;font-family:宋体">资讯部干事</span></strong>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;"></td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:0;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:   宋体">简介：校园社团</span> <span style="font-size:12px;line-height:150%;font-family:   宋体">负责办理协会各项活动</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%">2013.6</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">—</span></strong><strong><span style="font-size:12px;line-height:150%">2014.3</span></strong>
+                              </p>
+                          </td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">吉林大学珠海学院动漫协会</span></strong><strong> </strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">资讯部副部</span></strong>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;"></td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">简介：校园社团</span> <span style="font-size:12px;line-height:150%;font-family:   宋体">负责协助策划和组织各项协会活动</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%">2014.11</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">—至今</span></strong>
+                              </p>
+                          </td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">吉林大学珠海学院</span></strong><strong> </strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">戴尔课代表</span></strong>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;"></td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">简介：</span><span style="font-size:   12px;line-height:150%;font-family:宋体;color:#333333;background:white">戴尔课戴表（戴尔校园大使）在校为高校学子提供一套优质便捷的“咨询</span><span style="font-size:12px;line-height:150%;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#333333;background:white">-</span><span style="font-size:12px;line-height:150%;font-family:宋体;color:#333333;background:white">购机</span><span style="font-size:12px;line-height:150%;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#333333;background:white">-</span><span style="font-size:12px;line-height:150%;font-family:宋体;color:#333333;background:white">售后”服务。</span>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;">
+                              <p style="line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">2015.11</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">—</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:宋体">2016.3</span></strong>
+                              </p>
+                          </td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <strong><span style="font-size:12px;line-height:150%;font-family:   宋体">广州魔幻奇方软件有限公司</span></strong><strong><span style="font-size:12px;line-height:150%">&nbsp;&nbsp; &nbsp; </span></strong><strong><span style="font-size:12px;line-height:150%;font-family:   宋体">实习</span></strong>
+                              </p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="115" valign="top" style="padding: 0px 7px;"></td>
+                          <td width="453" valign="top" style="padding: 0px 7px;">
+                              <p style="margin-left:12px;line-height:150%">
+                                  <span style="font-size:12px;line-height:150%;font-family:宋体">简介：</span> <span style="font-size:12px;line-height:150%;font-family:   宋体">游戏程序</span> <span style="font-size:12px;line-height:150%;font-family:   宋体">负责游戏算法的编写及验证</span>
+                              </p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p style="line-height:150%">
+                  <strong><span style="font-size:12px;line-height:150%;font-family:宋体">2016.3</span></strong><strong><span style="font-size: 12px;line-height:150%;font-family:宋体">—</span></strong><strong><span style="font-size:12px;line-height:150%;font-family:宋体">至今&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;广西盛源行电子信息有限公司&nbsp; 实习</span></strong>
+              </p>
+              <p style="line-height:150%">
+                  <span style="font-size: 13px;line-height:150%;font-family:宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;line-height:150%;font-family: 宋体">&nbsp;&nbsp;</span><span style="font-size:12px;line-height:150%;font-family:宋体">简介：负责公司网站的开发工作及相关业务</span>
+              </p>
+              <p>
+                  <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#0070C0">教育背景</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:19px;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;;color:#0070C0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong>
+              </p>
+              <p style="line-height:150%">
+                  <strong><span style="font-size:13px;line-height:150%;font-family:宋体">2012.9~</span></strong><strong><span style="font-size:13px;line-height: 150%;font-family:宋体">至今</span></strong> <strong><span style="font-size:13px;line-height:150%;font-family: 宋体">&nbsp;吉林大学珠海学院&nbsp; 电子信息科学与技术专业&nbsp; 本科</span></strong>
+              </p>
+              <p style="line-height:150%;border:none;padding:0;padding:0 0 1px 0">
+                  <strong><span style="font-family:宋体">教育培训</span></strong><span style="font-family:宋体">：</span>
+              </p>
+              <p style="line-height:150%">
+                  <span style="font-family:宋体">主学专业</span>: <span style="font-size:13px;line-height:150%;font-family:宋体">模拟电子技术 数字电子技术 嵌入式系统原理与开发 单片机 信号与系统&nbsp; C语言 汇编语言等</span>
+              </p>
+              <p>
+                  <br />
+              </p>
+          </div>
+          </div>
            <div class="footer">
-               <div  style="padding-top:10px;">
+               <div  style="padding-top:20px;">
                    <a href="https://github.com/wh054" class="avatar"><img src="https://avatars2.githubusercontent.com/u/19181239?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/wh054">wh054</a> on <a href="https://www.github.com">GitHub</a>
                </div>
            </div>
        </div>
 </body>
 </html>
+               <!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('editor');
+
+    uParse('#myshow', {
+        rootPath: '../ueditor'
+    })
+</script>       
+
