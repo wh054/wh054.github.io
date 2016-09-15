@@ -43,10 +43,14 @@
                <!-- 实例化编辑器 -->
 <script type="text/javascript">
     var ue = UE.getEditor('editor');
-    
-    window.setInterval(function () {
-        fadeRun("mario");
-    }, 2000);
+    $(document).ready(
+        function () {
+            window.setInterval(function () {
+                fadeRun("mario");
+            }, 2000);
+        }
+        );
+   
 
     //uParse('#myshow', {
     //    rootPath: '../ueditor'
