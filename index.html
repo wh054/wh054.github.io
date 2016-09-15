@@ -7,45 +7,59 @@
 
     <!-- 配置文件 -->
     <script type="text/javascript" src="ueditor/ueditor.config.js"></script>
-    <!-- 编辑器源码文件 -->
+    <!-- JS -->
     <script type="text/javascript" src="ueditor/ueditor.all.js"></script>
     <script type="text/javascript" src="ueditor/ueditor.parse.js"></script>
     <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 样式 -->
+    <link rel="stylesheet" href="stylesheets/style.css">
 
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
 
-  <title>Hello There!</title>
+  <title>欢迎</title>
 </head>
 
 <body>
-       <div class="container">
-           <div class="headwrap">
-               <div class="headwrap-img"></div>
-               <div class="headwrap-img2"></div>
-                  <h1 style="font-family:'微软雅黑'; font-weight:bold ;padding-top:28px;">个人简历</h1>
-               <div class="headwrap-img3"></div>
-               <div class="headwrap-img4"></div>
-           </div>      
-           <div class="content">
-         
-          <div id="myshow">
-            </div>
-           <div class="footer">
-               <div  style="padding-top:20px;">
-                   <a href="https://github.com/wh054" class="avatar"><img src="https://avatars2.githubusercontent.com/u/19181239?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/wh054">wh054</a> on <a href="https://www.github.com">GitHub</a>
+       <div  id="mario" class="container">
+               <div class="headwrap">
+                   <div class="headwrap-img"></div>
+                   <div class="headwrap-img2"></div>
+                      <h1 style="font-family:'微软雅黑'; font-weight:bold ;padding-top:28px;">个人简历</h1>
+                   <div class="headwrap-img3"></div>
+                   <div class="headwrap-img4"></div>
+               </div>      
+                   <div class="content">        
+                  <div id="myshow">
+                    </div>
+                   <div class="footer">
+                       <div  style="padding-top:20px;">
+                           <a href="https://github.com/wh054" class="avatar"><img src="https://avatars2.githubusercontent.com/u/19181239?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/wh054">wh054</a> on <a href="https://www.github.com">GitHub</a>
+                       </div>
+                   </div>
                </div>
-           </div>
-       </div>
-           </div>
+      </div>
 </body>
 </html>
                <!-- 实例化编辑器 -->
 <script type="text/javascript">
     var ue = UE.getEditor('editor');
+    
+    window.setInterval(function () {
+        fadeRun("mario");
+    }, 2000);
 
-    uParse('#myshow', {
-        rootPath: '../ueditor'
-    })
+    //uParse('#myshow', {
+    //    rootPath: '../ueditor'
+    //})
+
+
+    function fadeRun(id)
+    {
+        var mario = $("#"+id);
+        mario.fadeOut(1000);
+        mario.fadeIn(1000);
+       
+       
+    }
 </script>       
 
